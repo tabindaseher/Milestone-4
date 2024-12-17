@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editable Resume Builder</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+       <div id="container">
+        <h1>EDITABLE RESUME BUILDER</h1>
+        <form id="form">
+            <fieldset>
+                <legend>Personal Information</legend>
+                <label for="name">Full Name :</label>
+                <input type="text" id="name" placeholder="Enter Your Name" required>
+
+                <label for="email">Email :</label>
+                <input type="email" id="email" required>
+
+                <label for="phone">Phone No :</label>
+                <input type="tel" id="phone" required >
+            </fieldset>
+
+            <fieldset>
+                <legend>Education</legend>
+                <label for="degree">Degree :</label>
+                <input type="text" id="degree" placeholder="e.g. Bachelors/master" required >
+
+                <label for="uni-name">University/College Name :</label>
+                <input type="text" id="university" placeholder="Your University/College Name" required >
+
+                <label for="years">Year :</label>
+                <input type="number" id="years" placeholder="e.g. 2020"  >
+            </fieldset>
+
+     
+            <fieldset>
+                <legend>Work Experience</legend>
+
+                <label for="company">Company Name :</label>
+                <input type="text" id="company" >
+
+                <label for="position">Position :</label>
+                <input type="text" id="position" >
+
+                <label for="resp"> Responsibilities :</label>
+                 <textarea id="respons" placeholder="Mention Your Responsibilities" rows="3"></textarea>
+               
+             </fieldset>
+
+            <fieldset class="all-skills">
+                <legend>Skills</legend>
+                <label for="skills">Skills :</label>
+                <input type="list" id="skills" placeholder="e.g. Web Development" >
+
+            </fieldset>
+
+            <button type="submit"><strong>Generate Resume</strong></button>
+         </form>
+         <br><br>
+<!--Dynamic and Editable Resume-->
+         <div id="generate-resume" contenteditable="true"></div>
+    
+         <script src="script.js"></script>
+    </div>
+</body>
+</html>
